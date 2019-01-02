@@ -1,0 +1,7 @@
+<div class="message-wrapper ">
+	<div ng-repeat="msg in globalMsgs" class="alert alert-{{msg.type}}">
+		<i class="fa fa-times pull-right" ng-click="remove($index)"></i>
+		<strong>{{msg.title}}:</strong>
+		<span>{{msg.msg}}</span>
+	</div>
+</div>
