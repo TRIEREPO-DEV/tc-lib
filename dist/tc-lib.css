@@ -1,0 +1,15 @@
+.btn {
+  padding: 15px;
+}
+
+.btn.btn-success {
+  background-color: green;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+}
