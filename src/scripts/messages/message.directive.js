@@ -27,7 +27,7 @@ angular.module('tcLib').directive('messages', function () {
     return {
         restrict: 'E',
         controller: messagesCtrl,
-        templateUrl: 'src/messages/message.html'
+        templateUrl: 'src/scripts/messages/message.html'
     }
 }).service('msgService', ['$timeout', '$rootScope', '$parse', function ($timeout, $rootScope, $parse) {
     return {

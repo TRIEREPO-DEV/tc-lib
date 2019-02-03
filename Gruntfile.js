@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 
         concat: {
             js: {
-                src: ['./dist/src/tcLib.js', './dist/src/**/*.js'],
+                src: ['./dist/src/scripts/tcLib.js', './dist/src/**/*.js'],
                 dest: './dist/tc-lib.js'
             }
         },
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
                 }
             },
             app: {
-                src: 'src/**/*.html',
+                src: 'src/scripts/**/*.html',
                 dest: 'dist/src/templates.js'
             }
         },
@@ -94,7 +94,7 @@ module.exports = function (grunt) {
             app: {
                 files: [{
                     expand: true,
-                    src: ['src/**/*.js'],
+                    src: ['src/scripts/**/*.js'],
                     dest: './dist',
                 }]
             }

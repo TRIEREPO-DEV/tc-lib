@@ -1,4 +1,4 @@
-angular.module('tcLib').directive('tcDatePicker', ['$parse', function($parse) {
+angular.module('tcLib').directive('tcDatePicker', ['$parse', function ($parse) {
 	return {
 		restrict: 'E',
 		scope: {
@@ -7,8 +7,14 @@ angular.module('tcLib').directive('tcDatePicker', ['$parse', function($parse) {
 			placeholder: '@',
 			model: "=ngModel",
 		},
-		templateUrl: 'src/date-picker/date-picker.html',
-		link: function(scope, attr, e) {
+		templateUrl: function (ele, args) {
+			var tpl = 'src/scripts/date-picker/date-picker.html';
+			if (args.hasOwnProperty('datetime')) {
+				tpl = 'src/scripts/date-picker/date-time-picker.html';
+			}
+			return tpl;
+		},
+		link: function (scope, attr, e) {
 
 			function updateOptions() {
 				scope.dateOptions = {
@@ -23,29 +29,29 @@ angular.module('tcLib').directive('tcDatePicker', ['$parse', function($parse) {
 			scope.calendarPanel = {
 				opened: false
 			};
-			
-			scope.openCalendar = function() {
+
+			scope.openCalendar = function () {
 				scope.calendarPanel.opened = true;
 			};
 
-			scope.$watch('options', function(newVal, oldVal) {
+			scope.$watch('options', function (newVal, oldVal) {
 				updateOptions();
 			});
-			
+
 			function getDayClass(data) {
 				var date = data.date,
 					mode = data.mode;
 				if (mode === 'day') {
 					var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
 					for (var i = 0; i < ($parse('events.length')(scope) || 0); i++) {
-						var currentDay = new Date($scope.events[i].date).setHours(0,0,0,0);
+						var currentDay = new Date($scope.events[i].date).setHours(0, 0, 0, 0);
 						if (dayToCheck === currentDay) {
 							return $scope.events[i].status;
 						}
 					}
 				}
 				return '';
-		  	}
+			}
 		}
 	};
 }]);
