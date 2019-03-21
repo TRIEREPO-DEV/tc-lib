@@ -191,6 +191,7 @@ angular.module('tcLib').directive('tcDatePicker', ['$parse', function ($parse) {
 		scope: {
 			name: '@',
 			options: '=?',
+			disabled: '=?',
 			placeholder: '@',
 			model: "=ngModel",
 		},
@@ -962,7 +963,7 @@ $templateCache.put('src/scripts/camera/camera-modal.html',
 
 
   $templateCache.put('src/scripts/date-picker/date-picker.html',
-    "<input placeholder=\"{{placeholder}}\" class=\"form-field grid-md-12\" ng-attr-name=\"{{name}}\" ng-model=\"model\" uib-datepicker-popup is-open=\"calendarPanel.opened\" datepicker-options=\"dateOptions\" ng-required=\"{{required}}\" close-text=\"Close\"> <span class=\"form-field-icon\"><button type=\"button\" class=\"btn btn-sm btn-sky-blue\" ng-click=\"openCalendar()\"><i class=\"fa fa-calendar\"></i></button></span>"
+    "<input placeholder=\"{{placeholder}}\" class=\"form-field grid-md-12\" ng-attr-name=\"{{name}}\" ng-model=\"model\" uib-datepicker-popup is-open=\"calendarPanel.opened\" datepicker-options=\"dateOptions\" ng-disabled=\"disabled\" ng-required=\"{{required}}\" close-text=\"Close\"> <span class=\"form-field-icon\" ng-if=\"disabled\"><button type=\"button\" class=\"btn btn-sm btn-sky-blue\" ng-click=\"openCalendar()\"><i class=\"fa fa-calendar\"></i></button></span>"
   );
 
 

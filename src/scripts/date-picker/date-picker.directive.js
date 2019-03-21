@@ -4,6 +4,7 @@ angular.module('tcLib').directive('tcDatePicker', ['$parse', function ($parse) {
 		scope: {
 			name: '@',
 			options: '=?',
+			disabled: '=?',
 			placeholder: '@',
 			model: "=ngModel",
 		},
