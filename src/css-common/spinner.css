@@ -1,0 +1,134 @@
+/* overlay loader */
+.overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 4000;
+	opacity: 0;
+	position: fixed;
+	visibility: hidden;
+	transition: all 0.4s;
+	background-color: #000;
+}
+.overlay.show {
+	opacity: 0.7;
+	visibility: visible;
+}
+.absolute {
+	position: absolute;
+}
+.form-loader{
+	font-size: 8em;
+	position:absolute;
+	margin:auto;
+    top: 15vh;
+    bottom: 0;
+    left: 25vh;
+    right: 0;
+    height: 30vh;
+    width: 50vh;
+    z-index: 999;
+    visibility: hidden;
+    color: #6ac7bb;
+}
+.form-loader.show{
+	visibility: visible;
+}
+.form-loader .fa.over-dialog-spin{
+	background-color: inherit ;
+	font-size : 100px;
+}
+.form-loader.over-dialog{
+	 height: 70vh;
+   	 width: 40vh;
+   	 z-index: 4999;
+}
+/* form-loader ends  */
+
+
+/* overlaystarts */
+.overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0;
+	position: fixed;
+	visibility: hidden;
+	transition: all 0.4s;
+	background-color: #000;
+}
+.overlay.show {
+	opacity: 0.7;
+	visibility: visible;
+}
+.popup {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 12;
+	opacity: 0;
+	width: 20%;
+	margin: auto;
+	overflow: auto;
+	position: fixed;
+	margin-top: 250px;
+	height: 136px;
+	visibility: hidden;
+	transition: all 0.6s;
+	background-color: #FFF;
+}
+.popup.show {
+	opacity: 1;
+	top:10px;
+	visibility: visible;
+}
+.popup>.popup-body {
+	height: 100%;
+	padding: 8px;
+	position: relative;
+	background-color: #F5F7FA;
+}
+.photo-popup {
+	left: 30%;
+	opacity: 0;
+	z-index: 1;
+	top: -100vh;
+	position: fixed;
+    padding: 15px 50px;
+	visibility: hidden;
+	transition: all 0.4s;
+    background-color: #FFF;
+}
+.photo-popup.show {
+	top: 100px;
+	opacity: 1;
+	visibility: visible;
+}
+.popup-close {
+    padding: 2px 5px;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    font-size: 16px !important;
+	background-color: #F11;
+	color: #FFF;
+	position: absolute;
+	right: -12px;
+	top: -10px;
+	border: 3px solid #FFF;
+	cursor: pointer;
+}
+.popup-close-btn{
+    position: absolute;
+    top: -9px;
+    left: 5px;
+    z-index: 30;
+}
+.popup-dimen{
+	height: 530px;
+    width: 25%;
+}
+/* overlay ends */

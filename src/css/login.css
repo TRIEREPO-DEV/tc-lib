@@ -1,0 +1,174 @@
+/* html, body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.login-body{
+  background: #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-size:100% 100%;
+  background-image: url(../images/login-bg.jpg);
+   background-image: repeating-radial-gradient(circle,#1e85dc 10%,#1168af,#3a93de,#514c4c); 
+  background-image: repeating-radial-gradient(circle,#1a609b 10%,#4288d0,#6b8da9,#514c4c);
+  background-image: repeating-radial-gradient(circle,#dc981e 10%,#d4bd8a,#714016,#514c4c);
+  background-image: repeating-radial-gradient(circle,#dc981e 10%,#9f4708,#714016,#514c4c);
+}
+
+.login-form {
+  background: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  position: relative;
+  color: #333;
+  border-radius: 10px;
+  
+}
+.login-form header {
+  background: #2caae2;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+}
+.login-form label {
+  margin-left: 20px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.login-form label span {
+  	color: #FF3838;
+    font-size: 1.5em;
+    position: absolute;
+    left: 3.2em;
+    top: -10px;
+}
+.login-form input {
+  display: block;
+  width: 78%;
+  margin-left: 20px;
+  padding: 5px 20px;
+  font-size: 1em;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.login-form .help {
+  margin-left: 20px;
+  font-size: 0.8em;
+  color: #777;
+}
+.login-form button {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: inherit;
+  color: white;
+  background: #FF3838;
+  outline: none;
+  border: none;
+  padding: 5px 15px !important;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.4);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.login-form button:hover {
+  background: #ff5252;
+} */
+.login-err-msg{
+	position: relative;
+    top: 0;
+    left: 25px;	
+    color:#f00;
+    font-size:11px;
+}
+
+.login-body {
+	height: 100vh;
+	position: relative;
+	background-size:100% 100%;
+	background-image: url(../images/login-bg.jpg);
+}
+.login-form {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 350px;
+	height: 500px;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.6);
+}
+.login-logo {
+	width: 100px;
+	height: auto;
+	margin: auto;
+	border-radius:100%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+.login-logo img {
+	margin: auto;
+	max-width: 100%;
+}
+.login-logo .fa-key {
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	opacity: 0.1;
+}
+.login-title {
+	margin: 10px 0 20px 0;
+}
+.login-title h1, .login-title h4 {
+	margin:0;
+}
+.field-container {
+	width: 70%;
+	margin: auto;
+	position: relative;
+	padding: 15px 15px 0 15px;
+}
+.field-container label {
+	display: block;
+}
+.field-container input {
+  		width: 100%;
+	outline: none;
+	padding: 10px 15px;
+	border-radius: 25px;
+	border: 1px solid #AAA;
+}
+.field-container .btn {
+	width: 100%;
+	border-radius: 25px;
+	border: 1px solid #2196F3;
+	background-color: #2caae2;
+}
+.field-container .btn:disabled {
+	color: #777;
+	background-color: #DDD;
+}
+.field-container .error-msg {
+	top: 15px;
+	left: 112px;
+	position: absolute;
+}
+.login-header i{
+	color: rgba(0, 0, 0, 0.3);
+}
+

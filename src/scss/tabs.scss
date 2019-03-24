@@ -1,0 +1,48 @@
+/* Tab css start here */
+/* uib tabset  */
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    clear:both;
+    position: absolute;
+    display:block;
+    margin-top: 0;
+}
+.nav-tabs>li {
+    display: inline-block;
+    margin-bottom: -1px;
+    position: relative;
+    border: 1px solid #888;
+}
+.nav-tabs>li.active{
+
+    border-bottom: 0;
+}
+.nav-tabs .nav-item>a{
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.tab-pane{
+    padding-top:40px;
+    border:1px solid #888;
+    display:none;
+}
+.tab-pane.active{
+    display:block
+}
+.table-scroll{
+	max-height:330px;
+	overflow-y:auto;
+}
+/* Tab css end here */

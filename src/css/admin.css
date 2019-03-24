@@ -1,0 +1,35 @@
+.dashboard-container{
+	margin: 4vh;
+	background: #fff;
+	border: 1px dotted dodgerblue;
+	border-radius:5px;
+	height: 92vh;
+	padding:5px;
+}
+.dashboard-heading{
+	border-bottom: 2px solid orange;
+	margin: 5px 0px;
+}
+.result-list-heading{
+	font-size: 14px;
+	font-weight:600;
+    background: #f9f5f5;
+    color: #7b6f6f;
+    padding: 5px !important;
+    
+}
+.mar-t-30{
+	margin-top:30px;
+}
+.mar-l-5{
+	margin-left:5px;
+}
+.mar-l-10{
+	margin-left:10px;
+}
+.result-list-heading div,.result-list-body div{
+	padding: 5px !important;
+}
+.result-list-body{
+	font-size: 12px;
+}

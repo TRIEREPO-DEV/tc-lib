@@ -1,0 +1,27 @@
+/* TABLES */
+.table {
+    width:100%;
+ 	border-collapse:collapse;
+ 	border:1px solid lightgray;
+ 	font-size: 13px;
+}
+.table th{
+	font-weight:500;
+	text-align: left;
+	color:#000;
+	background-color: #e9eaee;
+}
+.table tr:hover{
+	background-color: #f9f9f9;
+}
+.table tr{
+    background:#fff;
+    border: 1px solid #e7ecf1;
+}
+.table tr th,.table tr td {
+	padding: 10px;
+}
+.table tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+/* TABLES - End */

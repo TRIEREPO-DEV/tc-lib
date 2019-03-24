@@ -1,0 +1,11 @@
+.lab-tests-actions-icons-box{
+	height: 20px;
+    width: 20px;
+    border: 1px dotted;
+    border-radius: 3px;
+    text-align: center;
+}
+.selected-patient:hover{
+	background-color:#1A94BC;
+	color:white;
+}

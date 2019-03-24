@@ -1,0 +1,15 @@
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+
+article,body,html,section{width:100%;}
+.navbar{position:fixed;top:0;background:#f8f8f8;width:100vw;text-align:center;border-bottom:1px solid #e7e7e7}
+.navbar-brand { max-width: calc( 100vw - 65px) }
+.tclogo { height: auto; max-height: 60px; width: 100%; max-width: 330px }
+.navbar .navbar-list{margin:0;padding:0}
+.navbar .navbar-list .navbar-item{position:relative;display:inline-table;}
+.navbar .navbar-list .navbar-item.current{background:#e7e7e7}
+.navbar .navbar-list .navbar-item.current a{color:#000}
+.navbar .navbar-list .navbar-item.current .triangle-down{display:block}
+.navbar .navbar-list .navbar-item a{color:#777;text-decoration:none}
+article{background:#fff; text-align:center;color:#000}
+article:nth-child(odd){background:#eee}

@@ -1,0 +1,162 @@
+/* form fields css start here */
+form label {
+	display: inline-block;
+}
+.form-field {
+	outline: none;
+	padding: 5px;
+	line-height: 18px;
+	margin-bottom: 5px;
+	vertical-align: middle;
+	border: 1px solid #DDD;
+	transition: box-shadow .4s ease, border .4s ease;
+	position: relative;
+}
+.form-field-icon{ 
+    position: absolute;
+    margin:auto;
+    top: 2px;
+    right: 2px;
+}
+input[type='date'].form-field {
+	padding: 4px
+}
+.form-field:FOCUS {
+	border: 1px solid rgba(67, 74, 84, 0.7);
+	box-shadow: inset 0 0 2px 0 rgba(67, 74, 84, 0.6);
+}
+.form-field.radio label, .form-field.checkbox label {
+	margin-right: 15px;
+}
+.form-field.radio input[type="radio"], .form-field.checkbox input[type="checkbox"] {
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	outline: none;
+	vertical-align: bottom;
+}
+/** Form Fields Starts Here **/
+.has-float-label {
+	display: block;
+	position: relative;
+	margin-bottom:30px;
+	margin-top: 10px;
+}
+.has-float-label.textarea {
+	max-width: 100%;
+    padding-top: 1em;
+}
+.has-float-label select + label{
+	left: 14;
+	top: -16px;
+	cursor: text;
+	opacity: 0.7;
+	font-size: 75%;
+	position: absolute;
+	transition: all .2s;
+	pointer-events: none;
+	white-space: nowrap;
+	-webkit-transition: all .2s;
+}
+.has-float-label label,
+.has-float-label textarea + span,
+.has-float-label input + span {
+	left: 14;
+	top: -8px;
+	cursor: text;
+	opacity: 0.7;
+	font-size: 75%;
+	position: absolute;
+	transition: all .2s;
+	white-space: nowrap;
+	pointer-events: none;
+	-webkit-transition: all .2s;
+}
+/*  */
+.has-float-label input,
+.has-float-label textarea{
+	padding: 7px 10px;
+	border: 0;
+	width: 100%;
+	border-bottom: 2px solid #c2c2c2;
+}
+.has-float-label select{
+	
+	padding: 7px 10px;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.has-float-label.textarea textarea {
+    padding-top: 0;
+}
+.has-float-label input::-webkit-input-placeholder, .has-float-label select::-webkit-input-placeholder, .has-float-label textarea::-webkit-input-placeholder,
+.has-float-label input::-moz-placeholder, .has-float-label select::-moz-placeholder, .has-float-label textarea::-moz-placeholder
+.has-float-label input:-ms-input-placeholder, .has-float-label select:-ms-input-placeholder, .has-float-label textarea:-ms-input-placeholder {
+	opacity: 1;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s;
+}
+.has-float-label input::placeholder, .has-float-label select::placeholder,.has-float-label textarea::placeholder {
+	opacity: 1;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.has-float-label textarea:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+	opacity: 0;
+}
+.has-float-label textares:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label input:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-moz-placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus)::placeholder, .has-float-label input:placeholder-shown:not(:focus)::placeholder, .has-float-label select:placeholder-shown:not(:focus)::placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus) + *, .has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
+	top: .4em;
+	opacity: .5;
+	font-size: 14px;
+}
+.has-float-label textarea:focus, .has-float-label input:focus ,.has-float-label select:focus{
+	outline: none;
+	border-color: #4285f4;
+}
+.has-float-label select:focus{
+	outline: none;
+	border-color: gray;
+	box-shadow: inset 0 0 1px 0 rgba(67, 74, 84, 0.6);
+}
+
+.has-float-label select {
+	background: white;
+	padding-right: 1em;
+	background-size: 8px 10px;
+}
+
+a:not(:disabled), button:not(:disabled) {
+	cursor: pointer;
+}
+
+.form-group {
+	position: relative;
+	margin-top: 10px;
+}
+.form-group label {
+	display: block;
+}
+.form-group .form-control {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid #ddd;
+	
+	outline: none;
+}
+.form-group .form-control:focus {
+    outline: 0;
+	border-color: #5cb3fd;
+}
+
+/** Form Fields Ends Here **/

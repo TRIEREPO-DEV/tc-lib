@@ -1,0 +1,253 @@
+/** Cards Starts Here **/
+.card {
+	background: white;
+	animation-name: fadeInUp;
+	animation-duration: 0.75s;
+	animation-fill-mode: both;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card .card-actions {
+	float: right;
+}
+.card>.section-title {
+	padding: 5px;
+	color: #288228;
+	border-bottom: 1px solid #E0E0E0;
+}
+.card>.section-body {
+	padding: 5px;
+	margin-bottom: 1px solid #E0E0E0;
+}
+/** Cards Ends Here **/
+
+.card {
+	padding: 8px;
+	background-color: #FFF;
+	box-shadow: 0 1px 3px -1px rgba(22,24,27,.26);
+}
+.card-full-height-91{
+	height: 91vh;
+}
+.card-full-height-90{
+	height: 90vh;
+}
+.card-full-height-88{
+	height: 88vh;
+}
+.card-full-height-86{
+	height: 86vh;
+}
+.card-full-height-85{
+	height: 85vh;
+}
+.card-full-height-84{
+	height: 84vh;
+}
+.card-full-height-81{
+	height: 81.5vh;
+}
+.card-full-height-80{
+	height: 80vh;
+}
+.card-full-height-78{
+	height: 78.7vh;
+}
+.card-full-height-76{
+	height: 76vh;
+}
+.card-full-height-75{
+	height: 75vh;
+}
+.card-full-height-73{
+	height: 73.5vh;
+}
+.card-full-height-72{
+	height: 72vh;
+}
+.card-full-height-71{
+	height: 71vh;
+}
+.card-full-height-70{
+	height: 70vh;
+}
+.card-full-height-69{
+	height: 69vh;
+}
+.card-full-height-68-half{
+	height: 68.5vh;
+}
+.card-full-height-68{
+	height: 68vh;
+}
+.card-full-height-66{
+	height: 66vh;
+}
+.card-full-height-64{
+	height: 64vh;
+}
+.card-full-height-63{
+	height: 63vh;
+}
+.card-full-height-60{
+	height: 60vh;
+}
+.card-full-height-57{
+	height: 57vh;
+}
+.card-full-height-55{
+	height: 55vh;
+}
+.card-full-height-53{
+	height: 53vh;
+}
+.card-full-height-50{
+	height: 50vh;
+}
+.card-full-height-48{
+	height: 48vh;
+}
+.card-full-height-45{
+	height: 45vh;
+}
+.card-full-height-41{
+	height: 41vh;
+}
+.card-full-height-40{
+	height: 40vh;
+}
+.card-full-height-38{
+	height: 38vh;
+}
+.card-full-height-36{
+	height: 36vh;
+}
+.card-full-height-35{
+	height: 35vh;
+}
+.card-full-height-34{
+	height: 34vh;
+}
+.card-full-height-32{
+	height: 32vh;
+}
+.card-full-height-31{
+	height: 31vh;
+}
+.card-full-height-30{
+	height: 30vh;
+}
+.card-full-height-28{
+	height: 28vh;
+}
+.card-full-height-29{
+	height: 29vh;
+}
+.card-full-height-26{
+	height: 26vh;
+}
+.card-full-height-25{
+	height: 25vh;
+}
+.card-full-height-24{
+	height: 24vh;
+}
+.card-full-height-23{
+	height: 23vh;
+}
+.card-full-height-22{
+	height: 22vh;
+}
+.card-full-height-20{
+	height: 20vh;
+}
+.card-full-height-19{
+	height: 19vh;
+}
+.card-full-height-18{
+	height: 18vh;
+}
+.card-full-height-14{
+	height: 14vh;
+}
+.card-full-height-11{
+	height: 11vh;
+}
+.card-full-height-9{
+	height: 9vh;
+}
+.card-full-height-5{
+	height: 5vh;
+}
+.card-min-height-100{
+	min-height: 100px;
+}
+.card-min-height-300{
+	min-height: 300px;
+}
+.card-min-height-372{
+	min-height: 372px;
+}
+.card-min-height-367{
+	min-height: 367px;
+}
+.card-min-height-372{
+	min-height: 372px;
+}
+/* card ends */
+.tc-card{
+	background:#fff;
+    border: 1px solid #989898;
+	height: 200px;
+    padding: 2px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.tc-card-heading{
+	background: #e0e0e0;
+    border-bottom: 1px solid #989898;
+    padding: 10px 20px;
+    border-top-left-radius: 39px;
+    border-bottom-right-radius: 39px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tc-card-body{
+	padding: 10px;
+    font-size: 15px;
+}
+.tc-card.tc-card-info{
+    border-color: #1176f3;
+    color:#1176f3;
+}
+.tc-card.tc-card-info .tc-card-heading{
+	background: #17bbef;
+    border-bottom: 1px solid #1176f3;
+    color:#fff;
+}
+.tc-card.tc-card-success{
+    border-color: #4bb320;
+    color:#4bb320;
+}
+.tc-card.tc-card-success .tc-card-heading{
+	background: #8dce72;
+    border-bottom: 1px solid #4bb320;
+    color:#fff;
+}
+.tc-card.tc-card-warning{
+    border-color: #f58604;
+    color:#f58604;
+}
+.tc-card.tc-card-warning .tc-card-heading{
+	background: #f9a507;
+    border-bottom: 1px solid #f58604;
+    color:#fff;
+}
+.tc-card.tc-card-danger{
+    border-color: red;
+    color:red;
+}
+.tc-card.tc-card-danger .tc-card-heading{
+	background: #f90909;
+    border-bottom: 1px solid red;
+    color:#fff;
+}

@@ -1,0 +1,103 @@
+html,
+body {
+    background-color: white;
+}
+
+#container {
+    border: none;
+    width: 340px;
+    margin-left: -170px
+}
+
+#container #page1 #userid {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 46px;
+}
+
+#container #page1 #password {
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    margin-top: -1px;
+}
+
+#container #page1 #password:focus {
+    border-top-color: dodgerblue;
+}
+
+#container #page2 {
+    padding-top: 8px;
+}
+
+#container #page2 .page2Content {
+    top: 40px;
+}
+
+#container #page1 #errormessage {
+    margin: 0%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#container #findaccountbutton {
+    position: relative;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 3px;
+    bottom: auto;
+}
+
+.page {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#dotsign {
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgba(0, 0, 0, 0.39);
+}
+
+.helperbuttons {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 12px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+#container .helperbuttons a {
+    text-align: right;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+#confirmemail_message_other a:hover,
+#container .helperbuttons a:hover {
+    text-decoration: underline;
+    color: #448AFF;
+}
+
+#confirmemail_message_other a {
+    color: #448AFF;
+    text-decoration: none;
+}
+
+#page1 .pageheader {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+#HeaderImage {
+    margin-left: -100px;
+    z-index: 1;
+}
+
+#errormessage.error {
+    color: #D32F2F;
+}

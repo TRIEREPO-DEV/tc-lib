@@ -1,0 +1,241 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    font-family: 'lato','Roboto','Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    background-color: #fff
+}
+
+.overlay {
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+	left: 10vw;
+	opacity: 0;
+	top: -100vh;
+	width: 80vw;
+	position: fixed;
+	visibility: hidden;
+	box-shadow: 0 0 15px;
+	background-color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+
+.popup.sm {
+	width: 480px;
+	left: calc(50vw - 240px);
+}
+
+.popup.md {
+	max-width: 768px;
+}
+
+.popup.lg {
+	max-width: 1200px;
+}
+
+.popup>.popup-header {
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.popup>.popup-body {
+	padding: 10px;
+	overflow-y: auto;
+	max-height: calc( 100vh - 150px );
+}
+
+.popup.show {
+	top: 45px;
+	opacity: 1;
+	z-index: 1030;
+	visibility: visible;
+}
+
+.popup .popup-close {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #3F51B5;
+    color: #fff;
+    width: 1.4em;
+    font-size: 1.3em;
+    cursor: pointer;
+} 
+
+ul.selection-list {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+ul.selection-list>li>label {
+    display: block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+ul.selection-list>li>label.selected {
+    color: #fff;
+	background-color: #3F51B5;
+}
+
+
+ul.selection-list>li + li {
+    margin-top: 4px;
+}
+
+/* TABLES */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+.table.bordered td, .table.bordered th {
+	border: 1px solid #ddd;
+} 
+.table td, .table th {
+	padding: 5px 8px;
+}
+.table.table-header>thead>tr {
+	background-color: #e8e8e8;
+}
+/* TABLES - End */
+
+/* Floating Labels */
+.has-float-label {
+	display: block;
+	position: relative;
+	margin-bottom: 1em;
+}
+.has-float-label.textarea {
+	max-width: 100%;
+    padding-top: 1em;
+}
+
+.has-float-label label,
+.has-float-label textarea + span,
+.has-float-label input + span {
+	left: 0;
+	top: -2px;
+	opacity: 1;
+	cursor: text;
+	font-size: 75%;
+	position: absolute;
+	transition: all .2s;
+	pointer-events: none;
+	-webkit-transition: all .2s;
+}
+.has-float-label input,
+.has-float-label textarea,
+.has-float-label select {
+	margin-bottom: 2px;
+	padding-top: 1em;
+	border: 0;
+	width: 100%;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.has-float-label.textarea textarea {
+    padding-top: 0;
+}
+.has-float-label input::-webkit-input-placeholder, .has-float-label select::-webkit-input-placeholder, .has-float-label textarea::-webkit-input-placeholder,
+.has-float-label input::-moz-placeholder, .has-float-label select::-moz-placeholder, .has-float-label textarea::-moz-placeholder
+.has-float-label input:-ms-input-placeholder, .has-float-label select:-ms-input-placeholder, .has-float-label textarea:-ms-input-placeholder {
+	opacity: 1;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	transition: all .2s;
+}
+.has-float-label input::placeholder, .has-float-label select::placeholder,.has-float-label textarea::placeholder {
+	opacity: 1;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.has-float-label textarea:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+	opacity: 0;
+}
+.has-float-label textares:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label input:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-moz-placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus)::placeholder, .has-float-label input:placeholder-shown:not(:focus)::placeholder, .has-float-label select:placeholder-shown:not(:focus)::placeholder {
+	opacity: 0;
+}
+.has-float-label textarea:placeholder-shown:not(:focus) + *, .has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
+	font-size: 120%;
+	opacity: .5;
+	top: .5em;
+}
+.has-float-label textarea:focus, .has-float-label input:focus, .has-float-label select:focus {
+	outline: none;
+	border-color: #3CB6F7;
+}
+.has-float-label select {
+	padding-right: 1em;
+	background-size: 8px 10px;
+}
+
+
+
+
+
+
+
+
+/* */
+.section-group .section:first-child {
+    border-top: 2px solid #1f35ad;
+}
+.section-group .section {
+    border-bottom: 2px solid #1f35ad;
+    margin-bottom: 2px;
+}
+.section>.section-title {
+    display: flex;
+	cursor: pointer;
+}
+
+.section>.section-title>.title {
+    flex: 4;
+}
+.section-group.expandable>.section>.section-body {
+    display: none;
+}
+.section-group.expandable>.section>.section-title {
+	cursor: pointer;
+	position: relative;
+	padding: 5px 5px 5px 30px;
+}
+.section-group.expandable>.section>.section-title>.title:after {
+	content: '\f13a';
+	font-family: FontAwesome;
+	width: 20px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	color: #1f35ad;
+	font-size: 18px;
+}
+.section-group.expandable>.section.open>.section-title>.title:after {
+	content: '\f139';
+}
+.section-group.expandable>.section.open>.section-body {
+    display: block;
+}

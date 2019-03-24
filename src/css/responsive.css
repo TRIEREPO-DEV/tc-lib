@@ -1,0 +1,66 @@
+@media screen and (max-width:767px) {
+	ui-view {
+		display: block;
+		background-color: #fff;
+	}
+	.auth-form-container {
+		width: 96%;
+	}
+	.side-menu {
+		display: none;max-height: none;
+	}
+	.side-menu.show {
+		display: block;z-index: 1030;left: 0;top: 70px;max-height: calc(100vh - 70px);box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);background: #f9fafb;
+	}
+	.view-wrapper {
+		background-color: #e9e9e9;
+		left: 0;width: 100%;top: 72px;right: 0;max-height: none;
+	}
+	.que-text{
+		margin: 0px;font-size: 14px !important;font-weight: 500;
+	}
+	.header-name{
+		font-size: 25px;margin: 0px 12px;
+	}
+	.menu-icon{
+		font-size: 19px;margin-top: 5px;
+	}
+	.logout-icon{
+		font-size: 14px;margin-top: 8px;
+	}
+	
+	/* Exam Options  */
+	.inline-list {
+    	display: block !important;
+    	margin-top: 5px;
+	}
+	
+	/* overlay */
+	.overlay {
+	    height: 100vh;
+	    width: 100%;
+	}
+	.popup {
+	    width: 75%;
+	    min-height: 22vh;
+	}
+	.timer{
+	    position: fixed;
+	    z-index: 9999;
+    	right: 20px;
+    	bottom: 10px;
+	    border-radius: 50%;
+        background-color: #ea2121 !important;
+        padding: 14px 7px;
+	}
+	
+	/*portlet  */
+	.portlet>.portlet-title>.caption {
+    	font-size: 15px;
+	}
+	.portlet.light {
+    	padding: 10px 20px 10px;
+	}	
+	
+	
+}

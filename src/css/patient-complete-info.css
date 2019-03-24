@@ -1,0 +1,52 @@
+/* Pateint action Links Start */
+.patient-actions-list {
+	
+}
+
+.patient-actions-list ul {
+	padding: 0;
+}
+
+.patient-actions-list ul li {
+	padding: 10px;
+	list-style: none;
+	font-size: 14px;
+	border: 1px dotted transparent;
+	width: 98%;
+	cursor: pointer;
+	transition: background 0.5s ease;
+}
+
+.patient-actions-list ul li:hover {
+	border: 1px dotted #fff;
+	background-color: dodgerblue;
+	color: #fff;
+}
+
+.patient-actions-list .main-panel {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.patient-actions-icon-box {
+	height: 20px;
+	width: 20px;
+	border: 1px dotted;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.patient-actions-link-complete {
+	color: green;
+}
+
+.patient-actions-link-disable {
+	color: grey;
+	cursor: default !important;
+}
+
+.patient-actions-link-disable:hover {
+	background-color: grey !important;
+	color: black;
+}
+/* Patient Action Links End */

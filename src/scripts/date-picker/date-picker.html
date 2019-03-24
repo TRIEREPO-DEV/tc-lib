@@ -5,7 +5,7 @@
 	datepicker-options="dateOptions"
 	ng-disabled="disabled"
 	ng-required="{{required}}" close-text="Close" />
-<span class="form-field-icon" ng-if="disabled">
+<span class="form-field-icon" ng-if="!disabled">
 	<button type="button" class="btn btn-sm btn-sky-blue"
 		ng-click="openCalendar()">
 		<i class="fa fa-calendar"></i>

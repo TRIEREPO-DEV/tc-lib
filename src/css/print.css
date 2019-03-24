@@ -1,0 +1,137 @@
+.visible-print-block,.visible-print-inline,.visible-print-inline-block,.visible-print {
+	display: none !important;
+}
+@media print {
+	html {
+		height: 100%;
+	}
+	body{
+		margin: 0;
+	}
+	*{
+		box-sizing:border-box;
+	}
+	img {
+		width: 80px;
+		height: 80px;
+	}
+	.page-content{
+				margin:0px;
+	}
+	[class*='grid-md-']{ float:left;}
+	.grid-md-1 { width: 8.333333%; }
+	.grid-md-2 { width: 16.666667%; }
+	.grid-md-3 { width: 25%; }
+	.grid-md-4 { width: 33.333333%; }
+	.grid-md-5 { width: 41.666667%; }
+	.grid-md-6 { width: 50%; }
+	.grid-md-7 { width: 58.333333%; }
+	.grid-md-8 { width: 66.666667%; }
+	.grid-md-9 { width: 75%; }
+	.grid-md-10 { width: 83.333333%; }
+	.grid-md-11 { width: 91.666667%; }
+	.grid-md-12 { width: 100%; }
+	
+	.row { width: 100%; position: relative; padding: 5px;}
+	[class*='grid-']{ float: left !important; padding: 5px;}
+	.row:BEFORE, .row:AFTER, .clear {
+		clear: both;
+		content: '';
+		display: table;
+	}
+	.font-15{
+		font-size:15px; 
+	}
+	.font-20{
+		font-size:20px; 
+	}
+	.font-10{
+		font-size:10px; 
+	}
+	.visible-print-inline {
+		display: inline !important;
+	}
+	.visible-print-inline-block {
+		display: inline-block !important;
+	}
+	.visible-print,.visible-print-block {
+		display: block !important;
+	}
+	.hidden-print,.popup,.overlay {
+		display: none !important;
+	}
+	
+	.pull-right {
+		float:right;
+	}
+	.pull-left{
+		float:left;
+	}	
+	.text-center{
+		text-align: center;
+	}
+	
+	.no-padding {
+		padding: 0px !important;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+	.absolute{
+	position:absolute
+	}
+	.margin-top-400px{
+		height:400px;
+	}
+	.sign-auth{
+	  position:absolute;
+	  float:right;
+	  bottom:0px;
+	  right:0px;    
+	}
+	.m-t-7{
+		margin-top:7px;
+	}
+	.m-t-20{
+		margin-top:20px;
+	}
+	.lab-table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	.lab-table tr th, .lab-table tr td {
+		border: 1px solid #888;
+		padding: 8px;
+		text-align: left;
+		line-height: 1.42857;
+	}
+	.lab-table th {
+		color: #000000;
+	}
+	.lab-table tbody td, .lab-table tbody th {
+		font-size: 12px;
+	}
+	.lab-table.table-striped {
+		border: 1px solid #ddd;
+	}
+	.lab-table.table-striped thead th,
+	.lab-table.table-striped thead td {
+		background-color: #ddd;
+	}
+	.lab-table.table-striped tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+	.lab-table .lab-table tr:first-child>td {
+	    border-top: 0 none transparent;
+	}
+	.lab-table .lab-table td:first-child {
+	    border-left: 0 none transparent;
+	}
+	.lab-table .lab-table tr:last-child>td {
+	    border-bottom: 0 none transparent;
+	}
+	.lab-table .lab-table td:last-child {
+	    border-right: 0 none transparent;
+	}
+}

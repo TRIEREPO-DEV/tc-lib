@@ -1,0 +1,710 @@
+html,
+body {
+    min-height: 450px;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+    font-family: Roboto;
+    font-weight: 300;
+    margin: 0px;
+}
+
+input {
+    border-color: #d3d3d3;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus,
+input[type=number]:focus,
+input.confirmnumber:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #448AFF;
+}
+
+#returnlogin {
+    color: rgba(0, 0, 0, 0.46);
+    text-decoration: none;
+    font-size: 12px;
+    width: 400px;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 50%;
+    margin-bottom: -206px;
+    font-weight: 400;
+}
+
+#returnlogin:hover {
+    color: #448AFF;
+    text-decoration: underline;
+}
+
+#container {
+    width: 400px;
+    height: 368px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: white;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -200px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#HeaderImage {
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-image: url('../images/CompuComRed.png');
+    background-position: center;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    top: 50%;
+    margin-top: -228px;
+}
+
+#container #page1 input[type="text"], #container #page1 input[type="password"], #container #page1 input[type="email"] {
+    width: 100%;
+    margin: auto;
+    font-size: 13px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+#container #page1 #errormessage {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    width: 304px;
+    margin: auto;
+    padding-left: 6px;
+    padding-top: 4px;
+    text-align: left;
+    line-height: 20px;
+    height: 20px;
+}
+
+.g-recaptcha {
+    width: 304px;
+    margin: auto;
+    margin-top: 24px;
+}
+
+#footer {
+    height: 36px;
+    text-align: center;
+    border-top: 0;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.54);
+    box-sizing: border-box;
+}
+
+#footer a.footerlink {
+    color: #448AFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#footer a.footerlink:hover {
+    text-decoration: underline;
+}
+
+#container .actionbutton,
+#container #findaccountbutton {
+    position: absolute;
+    right: 0px;
+    bottom: 24px;
+    width: 120px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.86);
+    line-height: 40px;
+    height: 40px;
+    font-family: Roboto;
+    font-weight: 400;
+    cursor: not-allowed;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-transition: 0.59s ease-in-out;
+    -moz-transition: 0.59s ease-in-out;
+    -o-transition: 0.59s ease-in-out;
+    transition: 0.59s ease-in-out;
+}
+
+.hiddenButtonRight {
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    right: -121px!important;
+}
+
+#container .actionbutton.interactionEnabled,
+#container #findaccountbutton.validuserid.validrecaptcha {
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.page {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    display: none;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 24px;
+    overflow: hidden;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.page .pageheader {
+    margin-bottom: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#busyindicator, #busyindicator1 {
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+#servererror {
+    z-index: -1;
+    display: block;
+    opacity: 0;
+}
+
+#servererror.activate {
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    opacity: 1;
+}
+
+a.tel {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#servererror a.tel {
+    color: #448AFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#confirmemail_message a,
+#confirmemail_message_other a {
+    color: #448AFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#confirmemail_message a:hover,
+#confirmemail_message_other a:hover,
+#servererror a.tel:hover,
+a.tel:hover {
+    text-decoration: underline;
+}
+
+#confirmnumbererrormessage a.tel {
+    font-weight: 600;
+}
+
+#confirmnumbererrormessageclose {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 16px;
+    border: 1px solid #B71C1C;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#confirmnumbererrormessagecontent {
+    padding-right: 8px;
+}
+
+#servererror #servererror_icon {
+    font-size: 64px;
+    margin-bottom: 24px;
+    border-radius: 64px;
+    background-color: #D32F2F;
+    color: white;
+    height: 96px;
+    width: 96px;
+    line-height: 96px;
+    top: 50%;
+    margin-top: -104px;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+}
+
+
+#busyindicator #indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    font-size: 72px;
+    color: white;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.page.active {
+    display: block;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+#busyindicator.active #indicator {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#container #page2 {
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 99;
+}
+
+#container #page2 #verifyuserresponse {
+    height: 56px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+#container #page2 .testresponsebutton {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.page2Content {
+    display: none;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    position: absolute;
+    overflow: auto;
+    top: 67px;
+    padding: 0px 24px 24px;
+}
+
+.page2Content.active {
+    display: block;
+}
+
+#container #page2 .testresponsebutton:hover {
+    background-color: dodgerblue;
+    color: white;
+    border-color: royalblue;
+}
+
+input.confirmnumber {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    text-align: center;
+}
+
+.error {
+    color: #B71C1C!important;
+    font-weight: 400!important;
+}
+
+#confirmnumbererrormessage {
+    background-color: #FFCDD2;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 3px;
+    text-align: left;
+    color: #B71C1C;
+    font-size: 13px;
+    bottom: -100px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+#confirmnumbererrormessage.callHelpDesk,
+#confirmnumbererrormessage.sessionError,
+#confirmnumbererrormessage.otpError,
+#confirmnumbererrormessage.invalidOtpError,
+#confirmnumbererrormessage.contacthelpdesk,
+#confirmnumbererrormessage.accounterror,
+#confirmnumbererrormessage.verifycaptcha,
+#confirmnumbererrormessage.kbasnotconfigured {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    bottom: 16px;
+}
+
+#confirmnumbererrormessage.callHelpDesk {
+    text-align: center;
+    background-color: #B3E5FC;
+    color: #01579B;
+}
+
+.hidden {
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    display: none;
+}
+
+#confirmemail_icon {
+    font-size: 64px;
+    margin-bottom: 24px;
+    border-radius: 64px;
+    background-color: #FF5722;
+    color: white;
+    height: 96px;
+    width: 96px;
+    line-height: 96px;
+    top: 50%;
+    margin-top: -104px;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+}
+
+#passwordupdatecomplete_icon {
+    font-size: 64px;
+    margin-bottom: 24px;
+    border-radius: 64px;
+    background-color: #388E3C;
+    color: white;
+    height: 96px;
+    width: 96px;
+    line-height: 96px;
+    top: 50%;
+    margin-top: -104px;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+}
+
+#confirmemail_message_other,
+#confirmemail_message {
+    position: absolute;
+    top: 50%;
+    padding: 24px;
+    left: 0px;
+    right: 0px;
+    margin-top: -8px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#confirmemail {
+    font-weight: 500;
+}
+
+.missingemaillink {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: left;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.missingemaillink:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+#pageselectmethod .pageselectmethodoption {
+    cursor: pointer;
+    margin: 0px 8px;
+    margin-bottom: 8px;
+    padding: 16px 20px;
+    text-align: left;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+#pageselectmethod .pageselectmethodoption:hover {
+    border-color: dodgerblue;
+}
+
+#pageselectmethod .pageselectmethodoption .material-icons {
+    font-size: 36px;
+    float: left;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#pageselectmethod .pageselectmethodoption:hover .material-icons {
+    color: dodgerblue;
+}
+
+#pageselectmethod .pageselectmethodoption.disabled {
+    cursor: not-allowed !important;
+    ;
+    border-width: 0px !important;
+    ;
+}
+
+#pageselectmethod .pageselectmethodoption.disabled .material-icons {
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#pageselectmethod .pageselectmethodoption .contentblock {
+    padding-left: 48px;
+}
+
+#pageselectmethod .pageselectmethodoption .caption {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 500;
+}
+
+#pageselectmethod .pageselectmethodoption .content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#pageselectmethod #resetbutton {
+    position: absolute;
+    right: 0px;
+    bottom: 24px;
+    width: 120px;
+    border: none;
+    background-color: dodgerblue;
+    font-size: 12px;
+    color: white;
+    line-height: 40px;
+    height: 40px;
+    font-family: Roboto;
+    font-weight: 400;
+    cursor: pointer;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#questionsWrapper {
+    text-align: left;
+    position: absolute;
+    top: 67px;
+    bottom: 80px;
+    width: 100%;
+    left: 0px;
+    overflow: hidden;
+}
+
+.kbaQuestion {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.kbaQuestionText {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+    margin-bottom: 16px;
+    bottom: 50%;
+    position: absolute;
+}
+
+.kbaAnswerWrapper {
+    top: 50%;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+}
+
+.kbaAnswer {
+    font-size: 13px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-family: Roboto;
+    font-weight: 300;
+    width: 100%;
+}
+
+.kbaQuestion.slideoutleft,
+.page.slideoutleft {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    left: -100%;
+    visibility: hidden;
+}
+
+.kbaQuestion.slideoutRight,
+.page.slideoutRight {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    left: 100%;
+    visibility: hidden;
+}
+
+.pwfield {
+    font-size: 13px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 1px 8px;
+    font-family: Roboto;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.pwpolicyfeedback {}
+
+.pwpolicyheader {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#pwpolicieslist {
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.pwpolicy {
+    padding-right: 34px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 20px;
+    position: relative;
+}
+
+.pwpolicy.remotepwpolicy,
+.policypassed.pwpolicy {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.material-icons.pwpolicyicon {
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.pwpolicy.remotepwpolicy .material-icons.pwpolicyicon {
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+}
+
+.policypassed.pwpolicy .material-icons.pwpolicyicon {
+    color: green;
+    display: block;
+}
+
+#confirmationtext {
+    padding-right: 34px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 20px;
+    position: relative;
+}
